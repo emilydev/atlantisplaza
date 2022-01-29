@@ -1,0 +1,361 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+.logo {
+  float: none;
+  width: 250px;
+  margin: 0 auto; }
+  .logo:before {
+    content: "";
+    display: table; }
+  .logo:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+nav a {
+  margin-top: 10px;
+  width: 12.5%;
+  display: block;
+  float: left;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+  nav a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #f7c411; }
+  nav a:visited {
+    text-decoration: none; }
+
+.habitaciones-cont {
+  margin-top: 25px; }
+
+.habitacion-cont {
+  padding: 0;
+  position: relative;
+  cursor: pointer; }
+
+.room-info {
+  display: none;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0; }
+  .room-info:before {
+    content: "";
+    display: table; }
+  .room-info:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .room-info h3 {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 5%;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  .room-info p {
+    text-align: justify;
+    margin: 5% 5% 2% 5%;
+    color: #fff;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  .room-info ul {
+    padding-left: 10%; }
+    .room-info ul li {
+      color: #fff;
+      font-size: 12px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300; }
+
+.boton-zoom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7%; }
+
+.nosotros p {
+  text-align: center; }
+.nosotros img {
+  border-radius: 30px;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
+
+.espacio {
+  margin-top: 50px; }
+
+.espacio-sm {
+  margin-top: 35px; }
+
+.espacio-xs {
+  margin-top: 15px; }
+
+.auto-height:before {
+  content: "";
+  display: table; }
+.auto-height:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.no-padding-left {
+  padding-left: 0; }
+
+.no-padding-right {
+  padding-right: 0; }
+
+.fantasma {
+  display: block;
+  float: left; }
+
+.titulo {
+  text-align: center; }
+  .titulo h2 {
+    font-size: 40px;
+    color: #2858a3;
+    margin-bottom: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400; }
+  .titulo p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    color: #808080; }
+
+.linea_titulo {
+  width: 250px;
+  float: none;
+  margin: 0 auto;
+  border-bottom: 1px solid #f7c411; }
+
+.servicio h3 {
+  text-align: center;
+  color: #666666;
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+.servicio p {
+  margin-top: 15px;
+  text-align: center; }
+.servicio img {
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
+
+.zona-humeda img {
+  border-radius: 15px;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
+
+.eventos img {
+  border-radius: 15px;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
+
+.servicio_2 h4 {
+  font-size: 50px;
+  color: #2858a3;
+  display: block;
+  float: left;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+.servicio_2 span {
+  border-bottom: 1px solid #f7c411;
+  padding-bottom: 10px;
+  color: #808080;
+  display: block;
+  float: left;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+.servicio_2 p {
+  margin-top: 10px;
+  display: block;
+  float: left;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+
+.plan h3 {
+  color: #4d4d4d;
+  margin: 15px 0;
+  float: left; }
+.plan p {
+  float: left;
+  width: 100%; }
+.plan img {
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
+
+.noticia h3 {
+  color: #4d4d4d;
+  margin: 15px 0;
+  float: left; }
+.noticia p {
+  float: left;
+  width: 100%; }
+.noticia img {
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
+
+.instalacion {
+  padding: 0; }
+
+.form-control {
+  height: 50px;
+  background-color: #93abd1;
+  border: none;
+  color: #000; }
+  .form-control::-webkit-input-placeholder {
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  .form-control:-moz-placeholder {
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  .form-control::-moz-placeholder {
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  .form-control:-ms-input-placeholder {
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+
+.linea-form {
+  margin-top: 35px; }
+  .linea-form:before {
+    content: "";
+    display: table; }
+  .linea-form:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.form-group {
+  margin-bottom: 0; }
+
+.feedback {
+  width: 100%;
+  background-color: #d4deed;
+  height: 50px;
+  padding: 10px 12px;
+  float: left;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; }
+  .feedback:before {
+    content: "";
+    display: table; }
+  .feedback:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.mapa {
+  height: 400px; }
+
+footer {
+  width: 100%;
+  background-color: rgba(0, 14, 54, 0.8);
+  padding-bottom: 35px; }
+  footer:before {
+    content: "";
+    display: table; }
+  footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+  footer h5 {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 30px; }
+  footer p {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+
+.newsletter .form-control {
+  background-color: #999faf;
+  border: none; }
+  .newsletter .form-control::-webkit-input-placeholder {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  .newsletter .form-control:-moz-placeholder {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  .newsletter .form-control::-moz-placeholder {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  .newsletter .form-control:-ms-input-placeholder {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+.newsletter .btn-default {
+  margin-top: 10px;
+  float: right; }
+
+.foot .social {
+  width: 100%;
+  margin-top: 10px; }
+  .foot .social:before {
+    content: "";
+    display: table; }
+  .foot .social:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .foot .social img {
+    width: 45px;
+    display: block;
+    float: left; }
+  .foot .social p {
+    font-size: 12px;
+    display: block;
+    float: left;
+    margin: 12px 0 0 5px; }
+
+.derechos p {
+  margin: 15px 0;
+  text-align: center;
+  color: #808080; }
+
+@media only screen and (min-width: 768px) {
+  .imagen-principal-eventos {
+    display: block; }
+
+  .imagen-apoyo-eventos {
+    display: none; } }
+@media only screen and (max-width: 767px) {
+  nav a {
+    width: 25%; }
+
+  .imagen-principal-eventos {
+    display: none; } }
+@media only screen and (max-width: 480px) {
+  .habitacion-cont {
+    width: 100%; }
+
+  .servicio {
+    width: 100%; } }
+
+/*# sourceMappingURL=estilos.css.map */

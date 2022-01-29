@@ -1,0 +1,359 @@
+//========== IMPORTS ==========//
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300)
+//========== FIN IMPORTS ==========//
+
+
+//========== VARIABLES ==========//
+
+$font1: 'Open Sans', sans-serif
+
+//========== FIN VARIABLES ==========//
+
+
+//========== MIXINS ==========//
+
+=color_gradient($color_abajo, $color_arriba)
+	background: $color_abajo
+	background: -moz-linear-gradient(top,  $color_abajo 0%, $color_arriba 100%) !important
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color_abajo), color-stop(100%,$color_arriba)) !important
+	background: -webkit-linear-gradient(top,  $color_abajo 0%,$color_arriba 100%) !important
+	background: -o-linear-gradient(top,  $color_abajo 0%,$color_arriba 100%) !important
+	background: -ms-linear-gradient(top,  $color_abajo 0%,$color_arriba 100%) !important
+	background: linear-gradient(to bottom,  $color_abajo 0%,$color_arriba 100%) !important
+
+=shadow($x, $y, $blur, $spread, $color_rbga)
+	-webkit-box-shadow: $x $y $blur $spread $color_rbga
+	-moz-box-shadow: $x $y $blur $spread $color_rbga
+	box-shadow: $x $y $blur $spread $color_rbga
+
+=border_radius($top,$bottom)
+	-webkit-border-top-left-radius: $top
+	-webkit-border-top-right-radius: $top
+	-webkit-border-bottom-right-radius: $bottom
+	-webkit-border-bottom-left-radius: $bottom
+	-moz-border-radius-topleft: $top
+	-moz-border-radius-topright: $top
+	-moz-border-radius-bottomright: $bottom
+	-moz-border-radius-bottomleft: $bottom
+	border-top-left-radius: $top
+	border-top-right-radius: $top
+	border-bottom-right-radius: $bottom
+	border-bottom-left-radius: $bottom
+
+=placeholder($font_family, $color)
+	&::-webkit-input-placeholder
+		color: $color
+		font-family: $font_family
+		font-weight: 300
+	&:-moz-placeholder
+		color: $color
+		font-family: $font_family
+		font-weight: 300
+	&::-moz-placeholder
+		color: $color
+		font-family: $font_family
+		font-weight: 300
+	&:-ms-input-placeholder
+		color: $color
+		font-family: $font_family
+		font-weight: 300
+
+=auto-height()
+	&:before
+		content: ""
+		display: table
+	&:after
+		content: ""
+		display: table
+		clear: both
+
+=fuente1()
+	font-family: $font1
+	font-weight: 400
+
+=fuente2()
+	font-family: $font1
+	font-weight: 300
+
+//========== FIN MIXINS ==========//
+
+//========== ESTILOS ==========//
+
+.logo
+	float: none
+	width: 250px
+	margin: 0 auto
+	+auto-height()
+
+nav
+	a
+		margin-top: 10px
+		width: 12.5%
+		display: block
+		float: left
+		text-align: center
+		border-bottom: 1px solid #fff
+		+fuente2()
+		&:hover
+			text-decoration: none
+			border-bottom: 1px solid #f7c411
+		&:visited
+			text-decoration: none
+
+.habitaciones-cont
+	margin-top: 25px
+
+.habitacion-cont
+	padding: 0
+	position: relative
+	cursor: pointer
+
+.room-info
+	display: none
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.6)
+	position: absolute
+	top: 0
+	+auto-height()
+	h3
+		background-color: rgba(0, 0, 0, 0.3)
+		margin: 0
+		padding: 5%
+		color: #fff
+		+fuente2()
+	p
+		text-align: justify
+		margin: 5% 5% 2% 5%
+		color: #fff
+		font-size: 12px
+		+fuente2()
+	ul
+		padding-left: 10%
+		li
+			color: #fff
+			font-size: 12px
+			+fuente2()
+
+.boton-zoom
+	position: absolute
+	top: 0
+	right: 0
+	padding: 7%
+
+.nosotros
+	p
+		text-align: center
+	img
+		border-radius: 30px
+		+shadow(0, 5px, 10px, 0, rgba(0, 0, 0, 0.3))
+
+.espacio
+	margin-top: 50px
+
+.espacio-sm
+	margin-top: 35px
+
+.espacio-xs
+	margin-top: 15px
+
+.auto-height
+	+auto-height()
+
+.no-padding-left
+	padding-left: 0
+
+.no-padding-right
+	padding-right: 0
+
+.fantasma
+	display: block
+	float: left
+
+.titulo
+	text-align: center
+	h2
+		font-size: 40px
+		color: #2858a3
+		margin-bottom: 5px
+		+fuente1()
+	p
+		+fuente2()
+		color: #808080
+
+.linea_titulo
+	width: 250px
+	float: none
+	margin: 0 auto
+	border-bottom: 1px solid #f7c411
+
+.servicio
+	h3
+		text-align: center
+		color: #666666
+		font-size: 30px
+		margin-bottom: 15px
+		+fuente2()
+	p
+		margin-top: 15px
+		text-align: center
+	img
+		+shadow(0, 5px, 10px, 0, rgba(0, 0, 0, 0.3))
+
+.zona-humeda
+	img
+		border-radius: 15px
+		+shadow(0, 5px, 10px, 0, rgba(0, 0, 0, 0.3))
+
+.eventos
+	img
+		border-radius: 15px
+		+shadow(0, 5px, 10px, 0, rgba(0, 0, 0, 0.3))
+
+.servicio_2
+	h4
+		font-size: 50px
+		color: #2858a3
+		display: block
+		float: left
+		width: 100%
+		+fuente1()
+	span
+		border-bottom: 1px solid #f7c411
+		padding-bottom: 10px
+		color: #808080
+		display: block
+		float: left
+		+fuente2()
+	p
+		margin-top: 10px
+		display: block
+		float: left
+		+fuente2()
+
+.plan
+	h3
+		color: #4d4d4d
+		margin: 15px 0
+		float: left
+	p
+		float: left
+		width: 100%
+	img
+		+shadow(0, 5px, 10px, 0, rgba(0, 0, 0, 0.3))
+
+.noticia
+	h3
+		color: #4d4d4d
+		margin: 15px 0
+		float: left
+	p
+		float: left
+		width: 100%
+	img
+		+shadow(0, 5px, 10px, 0, rgba(0, 0, 0, 0.3))
+
+.instalacion
+	padding: 0
+
+.form-control
+	height: 50px
+	background-color: #93abd1
+	border: none
+	+placeholder($font1, #000)
+	color: #000
+
+.linea-form
+	margin-top: 35px
+	+auto-height()
+
+.form-group
+	margin-bottom: 0
+
+.feedback
+	width: 100%
+	background-color: #d4deed
+	height: 50px
+	padding: 10px 12px
+	float: left
+	+auto-height
+	+border_radius(4px,4px)
+
+.mapa
+	height: 400px
+
+footer
+	width: 100%
+	background-color: rgba(0, 14, 54, 0.8)
+	padding-bottom: 35px
+	+auto-height()
+	h5
+		color: #fff
+		+fuente1()
+		font-size: 30px
+	p
+		color: #fff
+		+fuente2()
+
+
+.newsletter
+	.form-control
+		background-color: #999faf
+		border: none
+		+placeholder($font1, #fff)
+	.btn-default
+		margin-top: 10px
+		float: right
+
+.foot
+	.social
+		width: 100%
+		margin-top: 10px
+		+auto-height()
+		img
+			width: 45px
+			display: block
+			float: left
+		p
+			font-size: 12px
+			display: block
+			float: left
+			margin: 12px 0 0 5px
+
+.derechos
+	p
+		margin: 15px 0
+		text-align: center
+		color: #808080
+
+
+//========== FIN ESTILOS ==========//
+
+//========== MEDIA QUERIES ==========//
+
+@media only screen and (max-width: 900px)
+
+
+@media only screen and (min-width: 768px)
+	.imagen-principal-eventos
+		display: block
+
+	.imagen-apoyo-eventos
+		display: none
+
+@media only screen and (max-width: 767px)
+	nav
+		a
+			width: 25%
+
+	.imagen-principal-eventos
+		display: none
+
+
+@media only screen and (max-width: 480px)
+	.habitacion-cont
+		width: 100%
+
+	.servicio
+		width: 100%
+
+//========== FIN MEDIA QUERIES ==========//
